@@ -1,0 +1,135 @@
+body{
+  
+  height: 100%;
+  max-height: 100vh;
+  background-image: linear-gradient(rgba(2, 2, 2, 0.664), rgba(0, 0, 0, 0.685)), url("/Imagenes/font.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+
+
+  font-family: 'Cabin Condensed', sans-serif;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+
+}
+
+h1{
+  text-align: center;
+  padding: 10px;
+}
+nav{
+  background-color: rgba(230, 203, 203, 0.2);
+  align-items: center;
+  text-align: center;
+  justify-content: right;
+  margin-top: 10px;
+}
+nav ul {
+  
+  text-align: center;
+  color: rgb(204, 195, 195);
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  max-height: 40px;
+}
+
+nav ul li{
+  padding:  20px;
+  border-bottom: 2px solid transparent;
+}
+
+ul li span:hover{
+  border-bottom: 3px solid rgba(15, 61, 61, 0.695);
+  cursor: pointer;
+}
+h3{
+  text-align: center;
+  color: antiquewhite;
+}
+
+div .Prod1{
+ 
+  display: flex;
+  justify-content: space-between;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+div .Prod2{
+  
+  display: flex;
+  justify-content: space-between;
+  
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+div .Prod1 img{
+  width: 200px;
+  height: 200px;
+  padding: 10px;
+  border-radius: 10%;
+  border-inline-end-style: dotted;
+  border-color: rgb(157, 202, 202);
+}
+
+div .Prod2 img{
+  width: 200px;
+  height: 200px;
+  padding: 10px;
+  border-radius: 10%;
+  border-inline-end-style: dotted;
+}
+
+
+html, body{
+  height: 100%;
+  font-weight: 800;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color:  #151719;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.waviy {
+  position: relative;
+ 
+  font-size: 60px;
+}
+.waviy span {
+  font-family: 'Alfa Slab One', cursive;
+  position: relative;
+  display: inline-block;
+  color: #fff;
+  text-transform: uppercase;
+  animation: waviy 1s infinite;
+  animation-delay: calc(.1s * var(--i));
+  
+}
+@keyframes waviy {
+  0%,40%,100% {
+    transform: translateY(0)
+  }
+  20% {
+    transform: translateY(-20px)
+  }
+}
