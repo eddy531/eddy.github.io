@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styleLogin.css">
 
-    <title>Document</title>
+    <title>Iniciar Secion</title>
 </head>
 
 
@@ -15,85 +15,59 @@
 
 
     <section>
-        <div class="todo">
-            <div class="eleccion">
-                <h1><b>¿TU ERES UN?</b></h1>
-                <div class="option-row">
 
-                    <input class="option-input" checked id="option-1" type="radio" name="options" />
-                    <label class="option" for="option-1">
-                        <span class="option__label">
-                            <img src="/imagenes/cliente.png"><sub>Cliente</sub>
-                        </span>
-                    </label>
+        <div class="form-box">
 
-                    <input class="option-input" id="option-2" type="radio" name="options" />
-                    <label class="option" for="option-2">
-                        <span class="option__label">
-                            <img src="imagenes/empleado.png"><sub>Empleado</sub>
-                        </span>
-                    </label>
+            <div class="form-value">
+                <form>
+                    <h2>Iniciar Secion</h2>
+                    <div class="input-box">
+                        <i class="fa-regular fa-envelope icon"></i>
+                        <input type="email" required>
+                        <label for="">Correo</label>
+                    </div>
+                    <div class="input-box">
+                        <i class="fa-solid fa-lock icon"></i>
+                        <input type="password" required>
+                        <label for="">Contraseña</label>
+                    </div>
+                    <div class="forget">
+                        <label for="">
+                            <input type="checkbox" name="" id="">
+                            Recordar contraseña
 
-                </div>
-
-                <div class="option-row">
-
-                    <input class="option-input" id="option-3" type="radio" name="options" />
-                    <label class="option" for="option-3">
-                        <span class="option__label">
-                            <img src="imagenes/admin.png"><sub>Admin</sub>
-                        </span>
-                    </label>
-
-                    <input class="option-input" id="option-4" type="radio" name="options" />
-                    <label class="option" for="option-4">
-                        <span class="option__label">
-                            <img src="/imagenes/gerente.png"><sub>Gerente</sub>
-                        </span>
-                    </label>
-
-                </div>
-
+                        </label>
+                    </div>
+                    <di>
+                        <a href="login.html"><button class="btn" onclick="location.href='elecion.html'">
+                                Acceder</button></a>
+                    </di>
+                    <div class="register">
+                        <p>
+                            Bienvenidos
+                            <a href="">Conoce mas</a><br>
+                            <a href="">Olvide mi contraseña</a>
+                        </p>
+                    </div>
+                </form>
             </div>
-            <div class="form-box">
+        </div>
+        </div>
 
-                <div class="form-value">
-                    <form>
-                        <h2>Iniciar Secion</h2>
-                        <div class="input-box">
-                            <i class="fa-regular fa-envelope icon"></i>
-                            <input type="email" required>
-                            <label for="">Correo</label>
-                        </div>
-                        <div class="input-box">
-                            <i class="fa-solid fa-lock icon"></i>
-                            <input type="password" required>
-                            <label for="">Contraseña</label>
-                        </div>
-                        <div class="forget">
-                            <label for="">
-                                <input type="checkbox" name="" id="">
-                                Recuerdame
-                                <a href="">Olvide mi contraseña</a>
-                            </label>
-                        </div>
-                        <di>
-                            <a href="login.html"><button class="btn"> Acceder</button></a>
-                        </di>
-                        <div class="register">
-                            <p>
-                                Bienvenidos
-                                <a href="">Conoce mas</a>
-                            </p>
-                        </div>
-                    </form>
-                </div>
+
+        <script src="https://kit.fontawesome.com/bec9f83658.js" crossorigin="anonymous"></script>
+        <div class="waveWrapper waveAnimation">
+            <div class="waveWrapperInner bgTop">
+                <div class="wave waveTop" style="background-image: url('imagenes/mov1.png')"></div>
+            </div>
+            <div class="waveWrapperInner bgMiddle">
+                <div class="wave waveMiddle" style="background-image: url('imagenes/mov2.png')"></div>
+            </div>
+            <div class="waveWrapperInner bgBottom">
+                <div class="wave waveBottom" style="background-image: url('imagenes/mov3.png')"></div>
             </div>
         </div>
     </section>
-
-    <script src="https://kit.fontawesome.com/bec9f83658.js" crossorigin="anonymous"></script>
-
 </body>
 
 </html>
