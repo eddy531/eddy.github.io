@@ -1,0 +1,104 @@
+* {
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-image: linear-gradient(rgba(54, 52, 52, 0.664),
+  rgba(57, 53, 53, 0.685)), url("/Imagenes/font3.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+  font-family: 'Cabin Condensed', sans-serif;
+  flex-direction:column;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  display: flex;
+}
+/*Color de la barra de navegacion*/
+.barra{
+  background-color: rgba(230, 192, 192, 0.388);
+  padding-top: 10px;
+}
+/*Letras de la barra de navegacion*/
+.barra ul {
+  justify-content: center;
+  display: flex;
+  list-style: none;
+}
+/*Separacion de las letras de la barra de navegacion*/
+.barra ul li{
+  padding:  20px;
+  border-bottom: 2px solid transparent;
+  color: rgb(255, 255, 255); 
+}
+a{
+  color: inherit;
+  text-decoration: none;
+  transition: 0.25s ease;
+  color: beige;
+}
+ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: center;
+  display: flex;
+}
+ul li{
+  padding:  30px;
+  
+}
+ul:hover a{
+  color: rgb(255, 255, 255);
+}
+
+li :hover{
+  border: 3px solid rgba(109, 202, 202, 0.695);
+  cursor: pointer;
+  padding: 10px;  
+}
+
+ul:hover a:hover{
+  color: #137c99;
+  box-shadow: 0 2px 0 0 currentColor;
+}
+/* Movimiento de entrada */
+* /*h1, h2, h3, li*/{ 
+  -webkit-animation: tracking-in-expand-fwd-top 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+            animation: tracking-in-expand-fwd-top 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+ @-webkit-keyframes tracking-in-expand-fwd-top {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-transform: translateZ(-700px) translateY(-500px);
+            transform: translateZ(-700px) translateY(-500px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateZ(0) translateY(0);
+            transform: translateZ(0) translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-expand-fwd-top {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-transform: translateZ(-700px) translateY(-500px);
+            transform: translateZ(-700px) translateY(-500px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateZ(0) translateY(0);
+            transform: translateZ(0) translateY(0);
+    opacity: 1;
+  }
+}
